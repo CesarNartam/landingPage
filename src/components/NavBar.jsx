@@ -22,19 +22,19 @@ const NavBar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const menuOptions = [
         {
-            text: "Home",
+            text: "Inicio",
             icon: <HomeIcon />,
         },
         {
-            text: "About",
+            text: "Descubrir",
             icon: <InfoIcon />,
         },
         {
-            text: "Services",
+            text: "Platillos",
             icon: <CommentRoundedIcon />,
         },
         {
-            text: "Contact",
+            text: "Contacto",
             icon: <PhoneRoundedIcon />,
         },
         {
@@ -49,14 +49,15 @@ const NavBar = () => {
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Services</a>
-        <a href="">Contact</a>
+        <a href="">Inicio</a>
+        <a href="">Descubrir</a>
+        <a href="">Platillos</a>
+        <a href="">Contacto</a>
         <a href="">
             <BsCart2 className="navbar-cart-icon"/>
         </a>
-        <button className="primary-button">Bookings now</button>
+        <button className="primary-button">
+          <a href="https://www.rappi.com.mx/">Comprar</a></button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
